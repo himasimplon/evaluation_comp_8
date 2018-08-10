@@ -1,0 +1,254 @@
+
+
+body {
+
+   margin: 0;
+   padding: 10;
+   background-color: white;
+   color: black;
+   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+   font-size: 100%; 
+}
+
+
+				/*********satrt head******/
+
+.bground {
+	
+	background-color: #7FA503;
+	width: 100%;
+	height: 40%;
+
+}
+
+
+#menuprincipal {
+   height: 80px;
+   background-color: #7FA503;   
+   color: white;
+   margin-top: -20px;
+
+
+}
+/*#menuprincipal ul {
+   margin-bottom: 5px;
+}*/
+
+
+#menuprincipal ul li a {
+   text-decoration: none;
+    color:#372121 ;
+    font-size: 1em;
+    padding: 10px;
+    margin-left:20px; 
+    border: 2px solid #7E6F81;
+    box-shadow: 10px 5px #7E6F81;
+    border-radius: 25px;
+    
+    
+} 
+
+#menuprincipal ul li {
+   display: inline;    
+   float: left;
+    margin-bottom: 20px;
+}
+img{
+	max-width: 400px;
+	width: auto;
+	max-height: 200px;
+}
+
+
+#contenu{
+	display: flex;
+}
+
+#principal{
+	width: 80%;
+}
+
+
+
+
+.article{
+	float: left;
+	text-align: justify;
+	padding-right: 20px;
+}
+
+
+	
+.groupe{
+	display: flex;
+	padding-left: 15px;
+	
+	content:"";
+	clear: both;
+
+}
+
+
+
+
+#aside{
+	/*background-color: #7E6F81;*/
+	background-color: #03A57A;   /* vert */
+    width: 20%;
+    padding-left: 20px;
+    padding-bottom: 50px;
+
+}
+	 /* sera affiché seulement lorsque le media query entrera en jeu */
+
+
+	@media only screen and(min-width: 700px) and(max-width: 1200px)
+{
+	#aside {
+
+		width: 100%;
+	   flex-direction: row;
+
+}
+
+	
+	#principal {
+
+		width: 100%;
+}
+
+/* Vos règles CSS pour les mobiles ici */
+
+@media only screen and(min-width: 400px) and(max-width: 700px)
+{
+   #aside {
+
+		width: 100%;
+		flex-direction: row;
+
+}
+
+   .groupe {
+
+		flex-direction: row;
+		width: 100%;
+
+}
+
+	.article {
+
+		float: none;
+
+		width: 100%;
+		text-align: center;
+}
+}
+	
+.menu_footer ul li {
+    
+    font-size: 1em;
+    display: inline;    
+    float: left;
+    position: absolute;
+    
+ }
+
+ 
+
+   /*position: absolute;*/
+
+}
+
+.menu_footer ul li a{
+	text-decoration: none;
+	color: #372121;
+	margin-left: 50;
+	padding-right: 100px;
+	display: inline; 	
+}
+
+
+
+.footer{
+	background-color: #7FA503;
+	height: 140px;
+
+}
+.adress p a{
+	float: right;
+	padding-bottom: 30px;
+}
+ .right {
+  	float: right;
+  }
+
+	
+
+	/*#menuprincipal a.menumobile {
+	display: none;  
+	}
+
+
+
+	#menuprincipal a.menumobile {
+
+		display:inline-block;
+
+		position: absolute;
+
+		top: 10px;
+
+		right: 10px;
+
+		text-decoration : none;
+
+		background-color: #037E8C;   /* bleu 
+
+		/*color: white;
+
+		padding: 15px;   /* il faut prévoir assez de padding pour que le menu soit facile à cliquer avec le doigt */
+	
+	/*#menuprincipal li:hover > ul.sousmenu {
+
+	display: block;  /* défait le display none pour le premier ul rencontré */
+
+	/*}
+
+
+	#menuprincipal ul.sousmenu li {
+
+	display: block;   /* pour défaire le inline du menu principal */
+
+	/*float: none;
+
+	margin-left: -40px;  /* pour aligner le sous-menu déroulant avec l'option du menu principal */
+
+	/*background-color: #7D7554;   /* brun */
+
+	/*border-top: 1px solid white;
+
+	}
+
+ 
+
+	#menuprincipal ul.sousmenu li a {
+
+	color: white;   
+
+	padding-top: 5px;
+
+	padding-bottom: 5px;
+
+	padding-right: 10px;
+
+	#menuprincipal ul.sousmenu {
+
+
+	}
+}
+    list-style-type: none;
+    display: inline; 
+    padding-top: 20px;
+	
+
+
